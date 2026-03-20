@@ -1,0 +1,41 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "title": "Cyber Security Bootcamp",
+      "description": "A practical bootcamp covering ethical hacking, network security, and vulnerability testing.",
+      "date": "2026-05-10",
+      "location": "IIT Delhi Campus",
+      "capacity": 100,
+      "availableSeats": 100
+    },
+    {
+      "id": "2",
+      "title": "Startup & Entrepreneurship Meetup",
+      "description": "Networking event for aspiring entrepreneurs to learn about startups, funding, and business models.",
+      "date": "2026-06-12",
+      "location": "Bengaluru Startup Hub",
+      "capacity": 180,
+      "availableSeats": 180
+    },
+    {
+      "id": "0e8d",
+      "title": "Blockchain Technology Seminar",
+      "description": "Understand blockchain fundamentals, smart contracts, and real-world use cases.",
+      "date": "2026-07-18",
+      "location": "Chennai Trade Centre",
+      "capacity": 200,
+      "availableSeats": 200
+    }
+  ],
+  "registrations": [
+    {
+      "id": "d4ac",
+      "eventId": "1",
+      "participantName": "Divandinne Raghavendra Reddy",
+      "email": "raghu2003reddy@gmail.com",
+      "phone": "9398662030"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
