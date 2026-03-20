@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'Segoe UI';
+}
+
+/* Background */
+body {
+    background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("../Assets/home.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* MAIN CENTER LAYOUT (Flexbox) */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* vertical center */
+    align-items: center;       /* horizontal center */
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    border-radius: 50%;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Title */
+#h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* BUTTONS USING GRID */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 buttons in row */
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Buttons */
+.btn {
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    color: white;
+    text-align: center;
+}
+
+/* Hover */
+.btn:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* Colors */
+.btn-primary {
+    background: linear-gradient(45deg, #5b7286, #c6d9eb);
+    border: none;
+    color: black;
+}
+
+.btn-success {
+    background: linear-gradient(45deg, #5b7286, #c6d9eb);
+    border: none;
+    color: black;
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, #5b7286, #c6d9eb);
+    border: none;
+    color: black;
+}
+
+/* RESPONSIVE (Mobile Friendly) */
+@media (max-width: 768px) {
+    .button-grid {
+        grid-template-columns: 1fr; /* stack buttons */
+    }
+}
